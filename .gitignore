@@ -1,3 +1,11 @@
+# Created by https://www.toptal.com/developers/gitignore/api/c++,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=c++,visualstudiocode
+
+# exclude
+build
+main
+
+### C++ ###
 # Prerequisites
 *.d
 
@@ -30,3 +38,27 @@
 *.exe
 *.out
 *.app
+<<<<<<< HEAD
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/c++,visualstudiocode
+=======
+>>>>>>> 1fc1f152a23e9ee97db22558e9752e9cb9317323
