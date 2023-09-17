@@ -34,6 +34,7 @@ file(GLOB TEST_SOURCES "tests/*.cpp")
 
 add_subdirectory(ui/console)
 add_subdirectory(thread)
+add_subdirectory(user_input)
 
 add_executable(every_cpp_unit_test ${TEST_SOURCES})
 target_link_libraries(every_cpp_unit_test PRIVATE ${GTEST_LIBRARIES} ${Boost_LIBRARIES} pthread)
@@ -43,5 +44,5 @@ add_test(NAME every_cpp_unit_test COMMAND every_cpp_unit_test)
 set_tests_properties(every_cpp_unit_test PROPERTIES FAIL_REGULAR_EXPRESSION ".*[Ff]ail.*")
 
 add_executable(cpp_app main.cpp)
-target_link_libraries(cpp_app ui_console thread_manager ${Boost_LIBRARIES} pthread)
+target_link_libraries(cpp_app user_input ui_console thread_manager ${Boost_LIBRARIES} pthread)
 #target_link_libraries(cpp_app account authentication product order ${Boost_LIBRARIES})
