@@ -1,0 +1,15 @@
+project(thread_manager CXX)
+
+set(THREAD_MANAGER_MODULE_NAME thread_manager)
+
+set(THREAD_MANAGER_MODULE_SOURCES
+    manager.cpp
+)
+
+set(THREAD_MANAGER_MODULE_HEADERS
+    manager.h
+)
+
+add_library(${THREAD_MANAGER_MODULE_NAME} ${THREAD_MANAGER_MODULE_SOURCES} ${THREAD_MANAGER_MODULE_HEADERS})
+
+target_include_directories(${THREAD_MANAGER_MODULE_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
