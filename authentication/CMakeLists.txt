@@ -1,5 +1,3 @@
-project(my_tests)
-
 set(TEST_HEADERS)
 set(TEST_SOURCES first_test.cpp)
 

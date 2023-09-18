@@ -1,5 +1,4 @@
 #include <iostream>
-#include <boost/asio.hpp>
 
 #include "keyboard_input.h"
 
@@ -9,6 +8,8 @@
 #include <termios.h>
 #include <unistd.h>
 #endif
+
+#include <boost/asio.hpp>
 
 boost::asio::io_service io_service;
 boost::asio::posix::stream_descriptor input(io_service);
