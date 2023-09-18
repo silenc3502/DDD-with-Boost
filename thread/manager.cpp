@@ -4,10 +4,13 @@
 #include <mutex>
 
 #include "manager.h"
+#include "../ui/console/ui_console.h"
 
 std::mutex mtx;
 
 void ui_thread() {
+    print_home_ui();
+
     for (int i = 0; i < 10; ++i) {
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
         {
